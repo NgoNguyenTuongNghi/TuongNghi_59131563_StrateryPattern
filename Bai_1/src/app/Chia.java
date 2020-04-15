@@ -1,8 +1,8 @@
 package app;
 
-public class Div implements Calculate {
+public class Chia implements Tinh {
     @Override
-    public float calculate(float a, float b) {
+    public float tinh(float a, float b) {
         if(b==0) 
             return Float.NaN;
         else 

@@ -2,16 +2,16 @@ package app;
 
 public class Main{
     public static void main(String[] args) {
-        Calculate add = new Add();
-        Calculate min = new Min();
+        Tinh cong = new Cong();
+        Tinh tru = new Tru();
         
-        Cont cont = new Cont();
+        Context context = new Context();
         System.out.println("\nAnswer: ");
 
-        cont.setCalc(add);
-        System.out.println("75 + 12 = " + cont.calculate(75, 12));
+        context.setTinhToan(cong);
+        System.out.println("75 + 12 = " + context.tinh(75, 12));
     
-        cont.setCalc(min);
-        System.out.println("54 - 78 = " + cont.calculate(54, 78));
+        context.setTinhToan(tru);
+        System.out.println("54 - 78 = " + context.tinh(54, 78));
     }
 }
