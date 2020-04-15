@@ -4,7 +4,7 @@ public class Main{
     public static void main(String[] args) {
         Tinh cong = new Cong();
         Tinh tru = new Tru();
-        
+    
         Context context = new Context();
         System.out.println("\nAnswer: ");
 
