@@ -1,6 +1,7 @@
 package app;
 
 import java.util.ArrayList;
+import java.text.SimpleDateFormat;
 
 public class QLSV {
     private ArrayList<SinhVien> ds;
@@ -24,10 +25,11 @@ public class QLSV {
                 }
         }
     }
+    SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
     public void inDS(){
         for (int i = 0; i < ds.size(); i++){
             SinhVien sv = ds.get(i);
-            System.out.println(i+1 + ". Ho ten: " + sv.getHoTen() + " -- Ngay sinh: " + sv.getNgaySinh() + 
+            System.out.println(i+1 + ". Ho ten: " + sv.getHoTen() + " -- Ngay sinh: " + sdf.format(sv.getNgaySinh()) + 
                                 " -- Diem trung binh: " + sv.getDiemTB());
         }
     }
